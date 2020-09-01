@@ -1,0 +1,11 @@
+diff --git a/node_modules/mobx-react-lite/es/observerBatching.js b/node_modules/mobx-react-lite/es/observerBatching.js
+index 4b467c5..60d0ca7 100644
+--- a/node_modules/mobx-react-lite/es/observerBatching.js
++++ b/node_modules/mobx-react-lite/es/observerBatching.js
+@@ -10,4 +10,6 @@ export function observerBatching(reactionScheduler) {
+         }
+     }
+     configure({ reactionScheduler: reactionScheduler });
++
++    console.log("Batching was applied");
+ }
